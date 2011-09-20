@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+margin: 20px 50px;
+font-family:Helvetica, Arial, Verdana, sans-serif;
+font-size:40px;
+font-weight:bold;
+}
+
+p {
+
+width:1000px;
+margin-top:5px;
+}
+
+a {
+display:block;
+font-size:25px;
+padding:4px 15px;
+float:left;
+margin-right:10px;
+background-color:#CCCCCC;
+color:#000000;
+text-decoration:none;
+}
+
+a:visited {
+color:#000000;
+}
+
+a:active {
+color:#000000;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+a.active {
+background-color:#999999;
+}
+
