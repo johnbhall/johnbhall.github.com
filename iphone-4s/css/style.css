@@ -1,0 +1,34 @@
+.notes {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  width: 250px;
+  background: yellow;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+}
+.browser {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  border: 1px solid #777;
+}
+.cutout {
+  position: absolute;
+  height: 90px;
+  top: 380px;
+  left: 300px;
+  width: 189px;
+}
+.phone-stage {
+  border: 1px solid blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+}
+.bphone {
+  position: absolute;
+  margin-left: 10px;
+}
