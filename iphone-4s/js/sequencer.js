@@ -36,7 +36,7 @@ Sequencer.prototype = {
       var that = this;
       setTimeout(function() {
         that.next()
-      },5500)
+      },2500)
     }
   },
   
