@@ -2,6 +2,9 @@
 <html>
   
   <head>
+    
+    <title>An explanation of Apple's iPhone 4S CSS animation -- John B. Hall</title>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
     <script src="js/sequencer.js"></script>
     <script src="js/gallery.js"></script>
@@ -19,7 +22,15 @@
     <img src="images/browser.gif" class="browser">
     
     <div class="notes">
-      This is a <u>rough</u> re-creation of Apple's use of CSS effects (transition and transform) on the iPhone 4S webpage. In the real version, the caption for each stage animates separately and the site degrades well in older browsers. My version only works in recent releases of webkit browsers (safari, chrome).
+      <h1>An explanation of Apple's iPhone 4S CSS animation</h1>
+      
+      <p>
+        The "phone stage" (blue-bordered box) contains all 6 "slides" of the animation sequence and has a transition css property with a duration and timing function (a cubic bezier curve). For the phone stage to cycle from one slide to the next, its css transform property is updated with new translate and rotate values. At the end of the cycle, the phone stage's transition duration is temporarily set to 0ms while slide 6 resets to slide 1.
+      </p>
+
+      <p>
+        This demo only works in recent version of safari, chrome, and firefox. In the <a href="http://apple.com/iphone" target="x">real version</a>, the caption for each stage animates separately and the site degrades well in older browsers.
+      </p>
     </div>
     
   </body>

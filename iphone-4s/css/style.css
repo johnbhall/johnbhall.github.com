@@ -8,6 +8,9 @@
   font-family: "Lucida Grande", sans-serif;
   font-size: 14px;
 }
+h1 {
+  font-size: 16px;
+}
 .browser {
   position: absolute;
   top: 350px;
