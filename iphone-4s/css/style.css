@@ -11,6 +11,10 @@
 h1 {
   font-size: 16px;
 }
+.tweet {
+  margin-bottom: 0.5em;
+}
+
 .browser {
   position: absolute;
   top: 350px;
