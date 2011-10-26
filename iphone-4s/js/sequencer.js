@@ -64,9 +64,11 @@ Slide.prototype = {
         additionalInstructions[0].call(sequencer);
         e[0].removeEventListener("webkitTransitionEnd", a, false);
         e[0].removeEventListener("transitionend", a, false);
+        e[0].removeEventListener("oTransitionEnd", a, false);
       };
       e[0].addEventListener("webkitTransitionEnd", a, false);
       e[0].addEventListener("transitionend", a, false);
+      e[0].addEventListener("oTransitionEnd", a, false);
     }
     var that = this;
     $.each(this.seq, function(i, v) {
@@ -75,10 +77,11 @@ Slide.prototype = {
   },
 
   transform: function(b, delayType, transitionTime) {
-    b.el.css("-webkit-transition", transitionTime + "ms cubic-bezier(.51, .01, .37, .98)");
-    b.el.css("-moz-transition", transitionTime + "ms cubic-bezier(.51, .01, .37, .98)");
-    b.el.css("-webkit-transform", this.transformString(b.x, b.y, b.r));
-    b.el.css("-moz-transform", this.transformString(b.x, b.y, b.r));
+    var that = this;
+    $.each(['-webkit-', '-moz-', '-o-', '-ms-', ''], function(index, value) {
+      b.el.css(value + "transition", transitionTime + "ms cubic-bezier(.51, .01, .37, .98)");
+      b.el.css(value + "transform", that.transformString(b.x, b.y, b.r));
+    })
   },
   
   transformString: function(x, y, r) {
