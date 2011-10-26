@@ -13,7 +13,7 @@ $(function() {
       el: phoneStage,
       x: -325,
       y: -234,
-      r: -30,
+      r: -30
     }, {
       el: bphone,
       x: 0,
