@@ -1,3 +1,9 @@
+/*
+  This code is originally from Apple.
+  For the purpose of keeping the demo simple, I've removed much
+  of their code and have modified other parts of it.
+*/
+
 var Sequencer = function(b) {
   $.extend(this,
     {
