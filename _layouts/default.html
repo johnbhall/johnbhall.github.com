@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>{{ page.title }}</title>
+    
+    <style type="text/css">
+      body {
+        font-family: 'Lucida Grande', sans-serif;
+      }
+      #content {
+        width: 980px;
+        margin: 0 auto;
+      }
+      h2 {
+        margin-top: 1.5em;
+      }
+      p {
+        line-height: 1.5em;
+      }
+    </style>
+  </head>
+  
+  <body>
+    
+    <div id="content">
+      {{ content }}
+    </div>
+    
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-3140088-2");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    
+  </body>
+  
+</html>

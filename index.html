@@ -1,60 +1,38 @@
-<!DOCTYPE html>
+---
+layout: default
+title: John B. Hall
+---
 
-<html>
+<h1>John B. Hall</h1>
 
-  <head>
-    <title>John B. Hall</title>
-    
-    <style type="text/css">
-      body {
-        margin-left: 2em;
-        font-family: 'Lucida Grande', sans-serif;
-      }
-      h2 {
-        margin-top: 1.5em;
-      }
-    </style>
-    
-  </head>
-  
-  <body>
-    <h1>John B. Hall</h1>
-    
-    <ul>
-      <li>Software Engineer at <a href="http://customink.com" target="_blank">CustomInk</a> (Ruby, Ruby on Rails, JavaScript, HTML, CSS)</li>
-      <li>Studied at <a href="http://bowdoin.edu" target="_blank">Bowdoin College</a> in Maine (Math and Computer Science double major; Visual Arts minor)</li>
-      <li>I live in Arlington, Virginia, a few miles west of Washington, DC</li>
-    </ul>
-    
-    <h2>Recent Projects</h2>
-    
-    <ul>
-      <li><a href="https://github.com/johnbhall/boston_marathon" target="_blank">boston_marathon gem</a></li>
-      <li><a href="iphone-4s/index.html">An explanation of the CSS animation on Apple's iPhone 4S webpage</a></li>
-      <li><a href="http://railsconf5k.com" target="_blank">2011 RailsConf5k in Baltimore</a> (organized the event and also <a href="https://twitter.com/#!/railsconf5k" target="_blank">tweeted</a> about it)</li>
-      <li><a href="http://bowdoindoesboston.heroku.com/" target="_blank">Bowdoin Does Boston -- realtime updates for the 2011 Boston Marathon</a> (Sinatra app)</li>
-    </ul>
-    
-    <a href="portfolio/index.html">College Portfolio with a few post-college updates</a>
-    
-    <h2>johnbhall</h2>
-    
-    <ul>
-      <li><a href="https://github.com/johnbhall" target="_blank">Github</a></li>
-      <li><a href="http://twitter.com/johnbhall" target="_blank">Twitter</a></li>
-      <li><a href="http://linkedin.com/in/johnbhall" target="_blank">LinkedIn</a></li>
-    </ul>
-    
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-3140088-2");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
-    
-  </body>
-  
-</html>
+<ul>
+  <li>Software Engineer at <a href="http://customink.com" target="_blank">CustomInk</a> (Ruby, Ruby on Rails, JavaScript, HTML, CSS)</li>
+  <li>Studied at <a href="http://bowdoin.edu" target="_blank">Bowdoin College</a> in Maine (Math and Computer Science double major; Visual Arts minor)</li>
+  <li>Resident of Arlington, Virginia, just outside of of Washington, DC</li>
+</ul>
+
+<h2>Projects</h2>
+
+<ul>
+  <li><a href="https://github.com/johnbhall/boston_marathon" target="_blank">boston_marathon gem</a></li>
+  <li><a href="iphone-4s/index.html">An explanation of the CSS animation on Apple's iPhone 4S webpage</a></li>
+  <li><a href="http://railsconf5k.com" target="_blank">2011 RailsConf5k in Baltimore</a> (organized the event and also <a href="https://twitter.com/#!/railsconf5k" target="_blank">tweeted</a> about it)</li>
+  <li><a href="http://bowdoindoesboston.heroku.com/" target="_blank">Bowdoin Does Boston -- realtime updates for the 2011 Boston Marathon</a> (Sinatra app)</li>
+  <li><a href="portfolio/index.html">College Portfolio</a> (with a few post-college updates)</li>
+</ul>
+
+<h2>Posts</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>@johnbhall</h2>
+
+<ul>
+  <li><a href="https://github.com/johnbhall" target="_blank">Github</a></li>
+  <li><a href="http://twitter.com/johnbhall" target="_blank">Twitter</a></li>
+  <li><a href="http://linkedin.com/in/johnbhall" target="_blank">LinkedIn</a></li>
+</ul>
