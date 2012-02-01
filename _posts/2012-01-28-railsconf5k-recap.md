@@ -8,6 +8,9 @@ title: "RailsConf5k Recap: Organizing a Successful 5k Race"
 
 In the Spring of 2011 I organized [RailsConf5k](http://railsconf5k.com), an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
 
+<!-- <img src="http://railsconf5k.com/images/railsconf5k.gif"> -->
+
+<img src="http://railsconf5k.com/images/official_map.gif" style="float: right; margin: 1.5em 0 1em 1.5em">
 
 Location and (lack of) Permit
 -----------------------------
@@ -44,12 +47,22 @@ Liability
 
 Liability is a nerve-wracking issue. For the low-key nature of our race, we felt that a waiver on our Eventbrite page was suitable.
 
+<div style="float: left; margin: 1.5em 1.5em 1em 0">
+  <img src="/railsconf5k/bib.jpg" target="x">
+  <span style="display: block; font-size: 0.8em">Photo credit: <a href="http://www.flickr.com/photos/cabledawgtke/5734030265/in/photostream/">Derek Lindahl</a></span>
+</div>
+
 
 Bibs
 ----
 
 Our race was small enough that we didn't need bibs for timing, but nothing says "This race is legit!" like custom-printed bibs. They also called attention to CustomInk, the race sponsor (and where I work). Some runners pinned their bibs to their backpacks for the rest of the conference, and I'd like to think that some have it hung on the wall of their office or bedroom, reminding them of their accomplishment. We ordered the "Deluxe Numbers" and pins from [Electric City Printing](http://www.numberthis.com/?p=108).
 
+
+<div style="float: left; margin: 1.5em 1.5em 1em 0; clear: left;">
+  <img src="/railsconf5k/headbands.jpg" target="x">
+  <span style="display: block; font-size: 0.8em">Photo credit: <a href="https://www.facebook.com/photo.php?fbid=10150185052888468&set=pu.34914778467&type=1">RailsConf</a></span>
+</div>
 
 Swag
 ----
@@ -68,6 +81,10 @@ Medical Staff
 
 We hired two bike EMTs from the Baltimore City Fire Department. Fortunately no one was injured at the race, but it was crucial to have medical personnel on site just in case. The fact that the EMTs were on bikes was especially helpful because Dean and Aaron were able to bike alongside the runners and "bring up the rear" behind the last finisher.
 
+<div style="float: right; margin: 1.5em 0 1em 1.5em;">
+  <img src="/railsconf5k/volunteers.jpg" target="x">
+  <span style="display: block; font-size: 0.8em">Photo credit: <a href="http://www.flickr.com/photos/jmj/5734114244/in/set-72157626750375736/">Jonathan Julian</a></span>
+</div>
 
 Volunteers, Photographers
 -------------------------
