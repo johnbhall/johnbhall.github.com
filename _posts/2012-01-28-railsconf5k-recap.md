@@ -6,6 +6,8 @@ title: "RailsConf5k Recap: Organizing a Successful 5k Race"
 {{ page.title }}
 ================
 
+by <a href="/" rel="author">John B. Hall</a>
+
 In the Spring of 2011 I organized [RailsConf5k](http://railsconf5k.com), an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
 
 <!-- <img src="http://railsconf5k.com/images/railsconf5k.gif"> -->
