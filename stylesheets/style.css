@@ -1,0 +1,19 @@
+body {
+  font-family: 'Lucida Grande', sans-serif;
+}
+#content {
+  width: 980px;
+  margin: 0 auto;
+}
+h2 {
+  margin-top: 1.5em;
+}
+p, li {
+  line-height: 1.5em;
+}
+
+.osx-window {
+     -moz-box-shadow: 0 7px 8px #a8a8a8;
+  -webkit-box-shadow: 0 7px 8px #a8a8a8;
+          box-shadow: 0 7px 8px #a8a8a8;
+}
