@@ -6,7 +6,8 @@ title: "RailsConf5k Recap: Organizing a Successful 5k Race"
 {{ page.title }}
 ================
 
-by <a href="/" rel="author">John B. Hall</a>
+by <a href="/" rel="author">John B. Hall</a><br />
+January 28, 2012
 
 In the Spring of 2011 I organized [RailsConf5k](http://railsconf5k.com), an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
 
@@ -50,7 +51,7 @@ Liability
 Liability is a nerve-wracking issue. For the low-key nature of our race, we felt that a waiver on our Eventbrite page was suitable.
 
 <div style="float: left; margin: 1.5em 1.5em 1em 0">
-  <img src="/railsconf5k/bib.jpg" target="x">
+  <img src="/railsconf5k/bib.jpg">
   <span style="display: block; font-size: 0.8em">Photo credit: <a href="http://www.flickr.com/photos/cabledawgtke/5734030265/in/photostream/">Derek Lindahl</a></span>
 </div>
 
@@ -62,7 +63,7 @@ Our race was small enough that we didn't need bibs for timing, but nothing says 
 
 
 <div style="float: left; margin: 1.5em 1.5em 1em 0; clear: left;">
-  <img src="/railsconf5k/headbands.jpg" target="x">
+  <img src="/railsconf5k/headbands.jpg">
   <span style="display: block; font-size: 0.8em">Photo credit: <a href="https://www.facebook.com/photo.php?fbid=10150185052888468&set=pu.34914778467&type=1">RailsConf</a></span>
 </div>
 
@@ -84,7 +85,7 @@ Medical Staff
 We hired two bike EMTs from the Baltimore City Fire Department. Fortunately no one was injured at the race, but it was crucial to have medical personnel on site just in case. The fact that the EMTs were on bikes was especially helpful because Dean and Aaron were able to bike alongside the runners and "bring up the rear" behind the last finisher.
 
 <div style="float: right; margin: 1.5em 0 1em 1.5em;">
-  <img src="/railsconf5k/volunteers.jpg" target="x">
+  <img src="/railsconf5k/volunteers.jpg">
   <span style="display: block; font-size: 0.8em">Photo credit: <a href="http://www.flickr.com/photos/jmj/5734114244/in/set-72157626750375736/">Jonathan Julian</a></span>
 </div>
 
