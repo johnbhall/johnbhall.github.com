@@ -21,7 +21,8 @@ p, li {
 .osx-window img {
   display: block;
 }
-.osx-window canvas {
+.osx-window canvas,
+.canvas-backup {
   margin: 15px;
 }
 .pudgy-star, .normal-star {

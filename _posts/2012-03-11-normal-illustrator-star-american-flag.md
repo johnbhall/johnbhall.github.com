@@ -14,14 +14,14 @@ With the Star Tool in Adobe Illustrator, the shape of a star can be modified by 
 <div class="osx-window pudgy-star">
   <img src="/post-assets/illustrator-star/pudgy-star-bar.jpg">
   <canvas id="pudgy_star" width="190" height="181">
-    <img src="/post-assets/illustrator-star/pudgy-star.jpg">
+    <img src="/post-assets/illustrator-star/pudgy-star.jpg" class="canvas-backup">
   </canvas>
 </div>
 
 <div class="osx-window normal-star">
   <img src="/post-assets/illustrator-star/normal-star-bar.jpg">
   <canvas id="normal_star" width="190" height="181">
-    <img src="/post-assets/illustrator-star/normal-star.jpg">
+    <img src="/post-assets/illustrator-star/normal-star.jpg" class="canvas-backup">
   </canvas>
 </div>
 
