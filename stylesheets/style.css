@@ -12,8 +12,22 @@ p, li {
   line-height: 1.5em;
 }
 
+/* Illustrator Star */
 .osx-window {
      -moz-box-shadow: 0 7px 8px #a8a8a8;
   -webkit-box-shadow: 0 7px 8px #a8a8a8;
           box-shadow: 0 7px 8px #a8a8a8;
+}
+.osx-window img {
+  display: block;
+}
+.osx-window canvas {
+  margin: 15px;
+}
+.pudgy-star, .normal-star {
+  display: inline-block;
+  margin-right: 1em;
+}
+.radii-star {
+  margin-right: 1em;
 }
