@@ -12,6 +12,13 @@ p, li {
   line-height: 1.5em;
 }
 
+/* index */
+#headshot {
+  float: right;
+  border: 1px solid #ddd;
+  margin: 0 0 1em 1em;
+}
+
 /* Illustrator Star */
 .osx-window {
      -moz-box-shadow: 0 7px 8px #a8a8a8;
