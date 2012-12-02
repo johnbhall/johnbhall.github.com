@@ -10,10 +10,6 @@ title: An explanation of the CSS animation on Apple's iPhone 4S webpage
     
     <title>An explanation of the CSS animation on Apple's iPhone 4S webpage -- John B. Hall</title>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
-    <script src="js/sequencer.js"></script>
-    <script src="js/gallery.js"></script>
-    
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     
     <meta property="og:title" content="An explanation of the CSS animation on Apple's iPhone 4S webpage">
@@ -36,28 +32,52 @@ title: An explanation of the CSS animation on Apple's iPhone 4S webpage
     <div class="notes">
       <h1>An explanation of the CSS animation on Apple's iPhone 4S webpage</h1>
       
+      <p>October 25, 2011</p>
+      
       <p>
         The "phone stage" (blue-bordered box) contains all 6 "slides" of the animation sequence and has a transition css property with a duration and timing function (a cubic bezier curve). For the phone stage to cycle from one slide to the next, its css transform property is updated with new translate and rotate values. At the end of the cycle, the phone stage's transition duration is temporarily set to 0ms while slide 6 resets to slide 1.
       </p>
 
       <p>
-        This demo only works in recent versions of safari, chrome, firefox, and opera. In the <a href="http://apple.com/iphone" target="x">real version</a>, the caption for each slide animates separately and the site degrades well in older browsers.
+        This demo only works in recent versions of safari, chrome, firefox, and opera. In the now-defunct real version, the caption for each slide animates separately and the site degrades well in older browsers.
       </p>
       
       <p>
         <br />
         by <a href="/" rel="author">@johnbhall</a><br />
-        Software Engineer at <a href="http://customink.com" target="x">CustomInk</a>
+        Software Engineer at <a href="http://customink.com">CustomInk</a>
       </p>
       
-      <div class="tweet">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://johnbhall.com/iphone-4s" data-text="An explanation of the CSS animation on Apple's iPhone 4S webpage" data-count="horizontal" data-via="johnbhall">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+      <div id="social">
+        
+        <div class="tweet">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://johnbhall.com/iphone-4s" data-text="An explanation of the CSS animation on Apple's iPhone 4S webpage" data-count="horizontal" data-via="johnbhall"></a>
+        </div>
+        
+        <div class="fb-like" data-href="http://johnbhall.com/iphone-4s" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="lucida grande"></div>
+        
       </div>
-      
-      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fjohnbhall.com%2Fiphone-4s&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21&amp;appId=209502599123472" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
       
     </div>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+    <script src="js/sequencer.js"></script>
+    <script src="js/gallery.js"></script>
+    
+    <!-- twitter js -->
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+    
+    <!-- facebook javascript sdk -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=209502599123472";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- google analytics -->
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

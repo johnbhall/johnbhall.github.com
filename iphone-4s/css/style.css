@@ -12,6 +12,9 @@ h1 {
   font-size: 16px;
   margin-top: 0;
 }
+#social {
+  height: 55px;
+}
 .tweet {
   margin-bottom: 0.5em;
 }
@@ -35,8 +38,18 @@ h1 {
   top: 0;
   left: 0;
   margin-left: 10px;
+  -webkit-transform: translate(-325px, -234px) rotate(-30deg);
+     -moz-transform: translate(-325px, -234px) rotate(-30deg);
+       -o-transform: translate(-325px, -234px) rotate(-30deg);
+      -ms-transform: translate(-325px, -234px) rotate(-30deg);
+          transform: translate(-325px, -234px) rotate(-30deg);
 }
 .bphone {
   position: absolute;
   margin-left: 10px;
+  -webkit-transform: translate(0px, 0px) rotate(-30deg);
+     -moz-transform: translate(0px, 0px) rotate(-30deg);
+       -o-transform: translate(0px, 0px) rotate(-30deg);
+      -ms-transform: translate(0px, 0px) rotate(-30deg);
+          transform: translate(0px, 0px) rotate(-30deg);
 }
