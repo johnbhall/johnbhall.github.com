@@ -9,11 +9,11 @@ title: "RailsConf5k Recap: Organizing a Successful 5k Race"
 by <a href="/" rel="author">John B. Hall</a><br />
 January 28, 2012
 
-In the Spring of 2011 I organized [RailsConf5k](http://railsconf5k.com), an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
+<img src="/railsconf5k/railsconf5k.gif" style="width: 250px;">
 
-<!-- <img src="http://railsconf5k.com/images/railsconf5k.gif"> -->
+In the Spring of 2011 I organized RailsConf5k, an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
 
-<img src="http://railsconf5k.com/images/official_map.gif" style="float: right; margin: 1.5em 0 1em 1.5em">
+<img src="/railsconf5k/map.png" style="float: right; margin: 1.5em 0 1em 1.5em">
 
 Location and (lack of) Permit
 -----------------------------
@@ -64,7 +64,7 @@ Our race was small enough that we didn't need bibs for timing, but nothing says 
 
 <div style="float: left; margin: 1.5em 1.5em 1em 0; clear: left;">
   <img src="/railsconf5k/headbands.jpg">
-  <span style="display: block; font-size: 0.8em">Photo credit: <a href="https://www.facebook.com/photo.php?fbid=10150185052888468&set=pu.34914778467&type=1">RailsConf</a></span>
+  <span style="display: block; font-size: 0.8em">Photo credit: <a href="https://www.facebook.com/photo.php?fbid=10150185052888468&amp;set=pu.34914778467&amp;type=1">RailsConf</a></span>
 </div>
 
 Swag
