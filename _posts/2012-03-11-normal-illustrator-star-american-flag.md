@@ -9,6 +9,10 @@ title: "Creating a Normal Star in Adobe Illustrator, American Flag Style"
 by <a href="/" rel="author">John B. Hall</a><br />
 March 11, 2012
 
+<div class='post-update' style="border: 1px solid yellow; background: lightyellow; padding: 0.5em;">
+  12/2/2012 Update: The normal star effect can be achieved by holding down the alt/option key when creating the star.
+</div>
+
 With the Star Tool in Adobe Illustrator, the shape of a star can be modified by specifying the number of star points, an outer radius, and an inner radius. Illustrator's default 5-point star is pudgy; to make a normal star like the one on the American flag, Radius 1 and Radius 2 must be in such a proportion that the edges of each point are visually in line with the edges of the points across the star.
 
 <div class="osx-window pudgy-star">
@@ -30,7 +34,7 @@ Formula for Calculating Radius
 
     inner_radius = outer_radius * .382
 
-For a star with an outer radius of 100, the inner radius would be 38.2. The dialog to specify these values appears when you select the Star Tool and click, not click-and-drag.
+For a star with an outer radius of 100, the inner radius would be 38.2. The dialog to specify these values appears when you select the Star Tool and click (not click-and-drag).
 
 <img src="/post-assets/illustrator-star/radii.jpg" class="osx-window radii-star">
 <img src="/post-assets/illustrator-star/illustrator-star-dialog.jpg" class="osx-window">
