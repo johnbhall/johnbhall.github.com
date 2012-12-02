@@ -1,8 +1,8 @@
 body {
-  font-family: 'Lucida Grande', sans-serif;
+  font-family: 'Geeza Pro', 'Lucida Grande', sans-serif;
 }
 #content {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 h2 {
@@ -17,6 +17,7 @@ p, li {
   float: right;
   border: 1px solid #ddd;
   margin: 0 0 1em 1em;
+  width: 150px;
 }
 
 /* Illustrator Star */
