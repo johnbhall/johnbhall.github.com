@@ -11,7 +11,7 @@ January 28, 2012
 
 <img src="/railsconf5k/railsconf5k.gif" style="width: 250px;">
 
-In the Spring of 2011 I organized RailsConf5k, an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
+In the Spring of 2011 I organized RailsConf5k, an inaugural 5k race for the attendees of RailsConf. RailsConf is a four-day conference attended by over 1,500 Ruby on Rails web developers, and 139 of them participated in the race. I couldn't have been more proud of how the event turned out, and I hope this recap will be helpful for anyone planning a 5k of their own.
 
 <img src="/railsconf5k/map.png" style="float: right; margin: 1.5em 0 1em 1.5em">
 
@@ -30,7 +30,7 @@ I live in DC and was not very familiar with the Baltimore area. Based on what I 
 Publicity
 ---------
 
-Almost everyone at RailsConf uses Twitter, so that was the best medium to get the word out about the race. We tweeted at [@railsconf5k](http://twitter.com/railsconf5k) and bought [railsconf5k.com](http://railsconf5k.com) to post race information, the registration link, the course map, and results.
+Almost everyone at RailsConf uses Twitter, so that was the best medium to get the word out about the race. We tweeted at [@railsconf5k](http://twitter.com/railsconf5k) and bought railsconf5k.com to post race information, the registration link, the course map, and results.
 
 
 Registration
