@@ -7,7 +7,9 @@ title: "RailsConf5k Recap: Organizing a Successful 5k Race"
 ================
 
 by <a href="/" rel="author">John B. Hall</a><br />
-January 28, 2012
+<time datetime="{{ page.date | date: '%Y-%m-%d') }}">
+  {{ page.date | date: "%B %-d, %Y") }}
+</time>
 
 <img src="/railsconf5k/railsconf5k.gif" style="width: 250px;">
 

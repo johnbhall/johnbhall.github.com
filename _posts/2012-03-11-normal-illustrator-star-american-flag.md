@@ -7,7 +7,9 @@ title: "Creating a Normal Star in Adobe Illustrator, American Flag Style"
 ================
 
 by <a href="/" rel="author">John B. Hall</a><br />
-March 11, 2012
+<time datetime="{{ page.date | date: '%Y-%m-%d') }}">
+  {{ page.date | date: "%B %-d, %Y") }}
+</time><br />
 
 <div class="post-update">
   12/2/2012 Update: The normal star effect can be achieved by holding down the alt/option key when creating the star.
