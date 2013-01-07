@@ -21,10 +21,14 @@ p, li {
 }
 
 /* Illustrator Star */
+ins {
+  text-decoration: none;
+}
 .post-update {
   border: 1px solid yellow;
   background: lightyellow;
   padding: 0.5em;
+  display: block;
 }
 .osx-window {
      -moz-box-shadow: 0 7px 8px #a8a8a8;

@@ -11,9 +11,9 @@ by <a href="/" rel="author">John B. Hall</a><br />
   {{ page.date | date: "%B %-d, %Y") }}
 </time><br />
 
-<div class="post-update">
-  12/2/2012 Update: The normal star effect can be achieved by holding down the alt/option key when creating the star.
-</div>
+<ins class="post-update" datetime="2012-12-02">
+  12/2/2012 Update: The normal star effect can be achieved by holding down the alt/option key when creating the star via click-and-drag.
+</ins>
 
 With the Star Tool in Adobe Illustrator, the shape of a star can be modified by specifying the number of star points, an outer radius, and an inner radius. Illustrator's default 5-point star is pudgy; to make a normal star like the one on the American flag, Radius 1 and Radius 2 must be in such a proportion that the edges of each point are visually in line with the edges of the points across the star.
 
