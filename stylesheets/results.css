@@ -1,0 +1,16 @@
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+td {
+  padding: 0.2em 0;
+  vertical-align: top;
+}
+.new-year td {
+  padding: 1.5em 0 0.2em 0;
+}
+.time, .pace, .place {
+  text-align: right;
+}

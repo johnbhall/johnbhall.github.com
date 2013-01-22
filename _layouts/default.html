@@ -5,7 +5,10 @@
   <head>
     <title>{{ page.title }}</title>
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width; initial-scale=0.75">
+    {% if page.stylesheet %}
+      <link rel="stylesheet" href="{{ page.stylesheet }}">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
   <body>
