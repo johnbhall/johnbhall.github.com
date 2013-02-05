@@ -1,0 +1,50 @@
+h1, h2, h3 {
+  line-height: 24px;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 14px;
+  line-height: 36px;
+  display: inline;
+}
+#site_url {
+  float: right;
+  margin-top: 1em;
+}
+address {
+  margin-bottom: 0;
+}
+header {
+  overflow: auto;
+}
+header h1 {
+  font-size: 28px;
+  padding-top: 0.25em;
+}
+#summary {
+  margin: 1.5em 0 1em;
+}
+section {
+  margin-bottom: 1.5em;
+}
+article {
+  max-width: 980px;
+  margin: 0 auto;
+}
+section>ul>li {
+  list-style-type: none;
+}
+section>ul>li li {
+  list-style-type: disc;
+}
+#self_summary {
+  margin-left: 25px;
+}
+.city {
+  margin: 0 0.5em;
+}
