@@ -56,6 +56,8 @@ To calculate the proportion of Radius 2 to Radius 1, I sought to determine the 3
 - _angle d_ = 180&deg; - _angle a_ - _angle b_ - _angle c_ = 18&deg;
 - finally, now that we know the all the angles of the gray triangle, we can use trigonometry to determine that if Radius 1 is 100, Radius 2 would be 38.2
 
+<div id="disqus_thread"></div>
+
 <script>
   var pudgy_star_canvas = document.getElementById("pudgy_star"),
       normal_star_canvas = document.getElementById("normal_star");
@@ -103,4 +105,12 @@ To calculate the proportion of Radius 2 to Radius 1, I sought to determine the 3
     context.stroke();
     context.closePath();
   }
+  
+  /* DISQUS */
+  var disqus_shortname = 'johnbhall';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
