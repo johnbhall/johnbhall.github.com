@@ -3,7 +3,7 @@ johnbhall.com
 
 Starting the server locally
 
-    jekyll --server --auto
+    jekyll serve --watch
 
 then go to
 
