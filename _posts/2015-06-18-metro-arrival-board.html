@@ -1,0 +1,260 @@
+---
+permalink: /metro-arrival-board
+title: "Building a Real-Time Metro Arrival Board with Raspberry Pi and LEDs"
+---
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>{{ page.title }}</title>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+    {% if page.stylesheet %}
+      <link rel="stylesheet" href="{{ page.stylesheet }}">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@johnbhall" />
+    <meta name="twitter:creator" content="@johnbhall">
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="Using data from WMATA's Rail Prediction API, I've created a personalized PID (Passenger Information Display) for my apartment" />
+    <meta name="twitter:image" content="http://johnbhall.com/post-assets/metro-arrival-board/metro-arrival-board.jpg" />
+
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="http://johnbhall.com/metro-arrival-board">
+    <meta property="og:image" content="http://johnbhall.com/post-assets/metro-arrival-board/metro-arrival-board.jpg">
+    <meta property="fb:admins" content="4601729">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="johnbhall.com">
+    
+    <style type="text/css" media="screen">
+      .large-photo {
+        max-width: 500px;
+        margin: 1em 0;
+      }
+      .photo {
+        max-width: 300px;
+      }
+      .igram-photo {
+        max-width: 300px;
+      }
+      td {
+        padding-right: 1em;
+      }
+      .cost {
+        text-align: right;
+        padding-right: 0;
+      }
+      .total td {
+        border-top: 1px solid black;
+      }
+      .social {
+        margin: 2em 0;
+        overflow: auto;
+      }
+      .tweet, .fb-like {
+        float: left;
+        margin-right: 1em;
+      }
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <div id="content">
+      
+      <h1>{{ page.title }}</h1>
+
+      by <a href="/" rel="author">John B. Hall</a><br />
+      <time datetime="{{ page.date | date: '%Y-%m-%d') }}">
+        {{ page.date | date: "%B %-d, %Y") }}
+      </time><br />
+
+      <img src="/post-assets/metro-arrival-board/metro-arrival-board.jpg" class="large-photo">
+
+      <p>
+        When I'm leaving my apartment to ride the Metro, I often wish I could quickly know whether there's an incoming train worth hurrying to catch. I could pull up one of the DC Metro apps and look up my stop, but that process is annoying. To give myself at-a-glance access to train predictions for Ballston station, I built a real-time Metro arrival board for my apartment using a Raspberry Pi and 7-segment LEDs. Here's how!
+      </p>
+
+      <h2>Set Up Raspberry Pi</h2>
+
+      <p>
+        I used a Raspberry Pi 2 Model B running NOOBS/Raspian.
+      </p>
+      
+
+      <h2>Solder LED Displays to their I2C Backpacks</h2>
+
+      <p>
+        The 4-digit 7-segment LEDs from <a href="http://www.adafruit.com/products/1002">Adafruit</a> come with an I2C backpack that is easy to interface with from the Pi. I first soldered the displays to the backpacks, and then I soldered the address-adjust pins. I used 4 displays; by soldering the address jumpers, I was able to identify each backpack uniquely (0x70, 0x71, 0x72, 0x73) so they could all run off of a single I2C bus. This was my first time learning to solder, so a #SolderSelfie was obligatory.
+      </p>
+
+      <img src="/post-assets/metro-arrival-board/solder-selfie.jpg" class="igram-photo">
+      <img src="/post-assets/metro-arrival-board/first-time-solder.jpg" class="igram-photo">
+
+      <h2>Design the Layout</h2>
+
+      <p>
+        The layout I designed is specifically tailored to my uses. The first row is for westbound Orange trains going to <a href="http://www.customink.com">CustomInk</a>, where I work, labeled with our octopus mascot Inky. The second row is for Orange and Silver trains traveling downtown. Printed copies of the Illustrator file were perfect guides for precise cuts.
+      </p>
+
+      <img src="/post-assets/metro-arrival-board/layout.png" class="photo">
+      <img src="/post-assets/metro-arrival-board/gap-stencil.jpg" class="igram-photo">
+
+      <h2>Connect LED Displays to Pi via Breadboard</h2>
+
+      <p>
+        Currently, I have the displays connected to Pi through a regular breadboard but I will eventually solder everything in place using a perma-proto breadboard.
+      </p>
+
+      <img src="/post-assets/metro-arrival-board/single-row.jpg" class="igram-photo">
+      <img src="/post-assets/metro-arrival-board/foam-core.jpg" class="igram-photo">
+
+      <h2>Assemble the Frame</h2>
+
+      <p>
+        This 5x7 deep-box frame from Target was perfect for for this project. The LED displays fit snugly into the gaps of the foam board, and in front of that, a black mat masks the digits that aren't in use (the 3rd and 6th of each row). Right now all my wires hang out the back but I plan to get everything self-contained within the frame boundaries so that only the power cord sticks out through a small hole in the frame backing.
+      </p>
+
+      <img src="/post-assets/metro-arrival-board/metro-arrival-board-front-off.jpg" class="igram-photo">
+      <img src="/post-assets/metro-arrival-board/metro-arrival-board-back.jpg" class="igram-photo">
+
+      <h2>Code!</h2>
+
+      <p>
+        The train data comes from WMATA's Rail Prediction API and the Pi connects to the Internet through a mini WiFi adapter (USB). On top of Adafruit's Python library for Raspberry Pi, I wrote a <a href="https://github.com/johnbhall/ballston-metro-board">script</a> that retrieves train data every 20 seconds, filters and formats it, and then prints it out to the LEDs. I modified the Pi's /etc/rc.local file to run the script on load, so the board fires up whenever the Pi is turned on.
+      </p>
+
+      <p>
+        That's it! Never again will I wolf down my cereal and sprint to the train, only to have to wait ten minutes on the platform.
+      </p>
+
+      <h2>Supplies and Cost</h2>
+
+      <h3>For the actual device</h3>
+
+      <table>
+        <tr>
+          <td>Raspberry Pi</td>
+          <td class="cost">$45</td>
+        </tr>
+        <tr>
+          <td>4 7-segment displays</td>
+          <td class="cost">$44</td>
+        </tr>
+        <tr>
+          <td>MicroSD Card</td>
+          <td class="cost">$13</td>
+        </tr>
+        <tr>
+          <td>WiFi Adapter</td>
+          <td class="cost">$12</td>
+        </tr>
+        <tr>
+          <td>Power Cord</td>
+          <td class="cost">$12</td>
+        </tr>
+        <tr>
+          <td>Picture Frame</td>
+          <td class="cost">$12</td>
+        </tr>
+        <tr>
+          <td>Breadboard</td>
+          <td class="cost">$6</td>
+        </tr>
+        <tr>
+          <td>Foam Board</td>
+          <td class="cost">$3</td>
+        </tr>
+        <tr class="total">
+          <td>Total</td>
+          <td class="cost">$147</td>
+        </tr>
+      </table>
+
+      <h3>Equipment that I can use again for future projects</h3>
+
+      <table>
+        <tr>
+          <td>Soldering Station</td>
+          <td class="cost">$38</td>
+        </tr>
+        <tr>
+          <td>Wires</td>
+          <td class="cost">$14</td>
+        </tr>
+        <tr>
+          <td>Solder</td>
+          <td class="cost">$9</td>
+        </tr>
+        <tr>
+          <td>Diagonal Cutters</td>
+          <td class="cost">$7</td>
+        </tr>
+        <tr>
+          <td>Pliers</td>
+          <td class="cost">$3</td>
+        </tr>
+        <tr class="total">
+          <td>Total</td>
+          <td class="cost">$71</td>
+        </tr>
+      </table>
+      
+      <div class="social">
+        <div class="tweet">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://johnbhall.com/metro-arrival-board" data-text="{{ page.title }}" data-count="horizontal" data-via="johnbhall"></a>
+        </div>
+
+        <div class="fb-like" data-href="http://johnbhall.com/metro-arrival-board" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="lucida grande"></div>
+      </div>
+      
+      <div id="disqus_thread"></div>
+      
+    </div>
+
+    <!-- twitter js -->
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+    <!-- facebook javascript sdk -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=209502599123472";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      /* DISQUS */
+      var disqus_shortname = 'johnbhall';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-3140088-2");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    
+  </body>
+  
+</html>
+
+
+
+
+
