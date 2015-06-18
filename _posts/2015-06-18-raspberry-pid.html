@@ -76,7 +76,7 @@ title: "Raspberry PID: Building a Real-Time Metro Arrival Board with Raspberry P
       <img src="/post-assets/raspberry-pid/raspberry-pid.jpg" class="large-photo">
 
       <p>
-        When I'm leaving my apartment to ride the Metro, I often wish I could quickly know whether there's an incoming train worth hurrying to catch. I could pull up one of the DC Metro apps and look up my stop, but that process is annoying. To give myself at-a-glance access to train arrival predictions for Ballston station, I built a real-time PID (Passenger Information Display) for my apartment using a Raspberry Pi and 7-segment LEDs. I call it "Raspberry PID".
+        When I'm leaving my apartment to ride the Metro, I often wish I could quickly know whether there's an incoming train worth hurrying to catch. I could pull up one of the DC Metro apps and look up my stop, but that process is annoying. To give myself at-a-glance access to train arrival predictions for Ballston station, I built a real-time PID (Passenger Information Display) for my apartment using a Raspberry Pi and 7-segment LEDs. I call it "Raspberry PID," and here's how I made it.
       </p>
 
       <h2>Set Up Raspberry Pi</h2>
@@ -89,7 +89,7 @@ title: "Raspberry PID: Building a Real-Time Metro Arrival Board with Raspberry P
       <h2>Solder LED Displays to their I2C Backpacks</h2>
 
       <p>
-        The 4-digit 7-segment LEDs from <a href="http://www.adafruit.com/products/1002">Adafruit</a> come with an I2C backpack that is easy to interface with from the Pi. I first soldered the displays to the backpacks, and then I soldered the address-adjust pins. I used 4 displays; by soldering the address jumpers, I was able to identify each backpack uniquely (0x70, 0x71, 0x72, 0x73) so they could all run off of a single I2C bus. This was my first time learning to solder, so a #SolderSelfie was obligatory.
+        The 4-digit 7-segment LEDs from <a href="http://www.adafruit.com/products/1002">Adafruit</a> come with an I2C backpack that is easy to interface with from the Pi. I first soldered the displays to the backpacks, and then I soldered the address-adjust pins. I used 4 displays, and by soldering the address jumpers I was able to identify each backpack uniquely (0x70, 0x71, 0x72, 0x73) so they could all run off a single I2C bus. This was my first time soldering, so a #SolderSelfie was obligatory.
       </p>
 
       <img src="/post-assets/raspberry-pid/solder-selfie.jpg" class="igram-photo">
@@ -107,7 +107,7 @@ title: "Raspberry PID: Building a Real-Time Metro Arrival Board with Raspberry P
       <h2>Connect LED Displays to Pi via Breadboard</h2>
 
       <p>
-        Currently, I have the displays connected to Pi through a regular breadboard but I will eventually solder everything in place using a perma-proto breadboard.
+        Currently, I have the displays connected to Pi through a regular breadboard, but I will eventually solder everything in place using a perma-proto breadboard.
       </p>
 
       <img src="/post-assets/raspberry-pid/single-row.jpg" class="igram-photo">
@@ -116,7 +116,7 @@ title: "Raspberry PID: Building a Real-Time Metro Arrival Board with Raspberry P
       <h2>Assemble the Frame</h2>
 
       <p>
-        This 5x7 deep-box frame from Target was perfect for for this project. The LED displays fit snugly into the gaps of the foam board, and in front of that, a black mat masks the digits that aren't in use (the 3rd and 6th of each row). Right now all my wires hang out the back but I plan to get everything self-contained within the frame boundaries so that only the power cord sticks out through a small hole in the frame backing.
+        This 5x7 deep-box frame from Target was perfect for this project. The LED displays fit snugly into the gaps of the foam board, and in front of that, a black mat masks the digits that aren't in use (the 3rd and 6th of each row). Right now all my wires hang out the back, but I plan to get everything self-contained within the frame boundaries so that only the power cord sticks out through a small hole in the frame backing.
       </p>
 
       <img src="/post-assets/raspberry-pid/raspberry-pid-front-off.jpg" class="igram-photo">
